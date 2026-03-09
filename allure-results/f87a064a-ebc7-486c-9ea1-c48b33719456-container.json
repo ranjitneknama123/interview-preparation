@@ -1,0 +1,1 @@
+{"uuid":"f87a064a-ebc7-486c-9ea1-c48b33719456","name":"Surefire suite","children":["d13dd6a7-4ec1-48f6-901c-b5fb0a96d14d"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1773055661784,"stop":1773055669978}],"afters":[],"start":1773055661752,"stop":1773055670536}
