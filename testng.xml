@@ -2,17 +2,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Automation Suite" parallel="classes" thread-count="3">
 
+    <parameter name="browser" value="chrome"/>
 
     <listeners>
         <listener class-name="listners.RetryListener"/>
     </listeners>
 
-    <test name="Regression test">
-        <groups>
-            <run>
-                <include name="regression"/>
-            </run>
-        </groups>
+    <!-- Smoke Tests -->
+    <test name="Smoke Test">
 
         <classes>
             <class name="tests.LoginTest"/>
@@ -20,4 +17,5 @@
             <class name="tests.SearchTest"/>
         </classes>
     </test>
+
 </suite>
