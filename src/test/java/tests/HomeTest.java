@@ -1,24 +1,29 @@
 package tests;
 
 import base.BaseTest;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+
 public class HomeTest extends BaseTest {
 
-    @Test(groups = {"smoke"})
+   // @Severity(SeverityLevel.CRITICAL)
     public void homePageLoadTest() {
         System.out.println("Smoke Test - Home Page");
     }
 
-    @Test(groups = {"regression"})
+    @Test
+    //@Severity(SeverityLevel.CRITICAL)
     public void productSearchTest() {
         System.out.println("Regression Test - Search");
     }
 
-    @Test(groups = {"smoke", "regression"})
+    @Test
+    //@Severity(SeverityLevel.CRITICAL)
     public void loginTest() {
         System.out.println("Login Test");
-        Assert.assertTrue(true);
+        ///Assert.assertTrue(true);
+        //Assert.fail();
     }
 }
